@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@nawalabdi/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "clone of lodash library",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/nawalabdi/lotide.git"
   },
-  "author": "",
+  "author": "Nawal Abdi nawalabdi03@gmailcom (https://github.com/nawalabdi) ",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/nawalabdi/lotide/issues"
