@@ -9,7 +9,7 @@ const middle = function(array) {
     const start = 0;
     const end = array.length - 1;
     const midIndex = Math.floor((start + end) / 2);
-    if (arr.length % 2 === 0) {
+    if (array.length % 2 === 0) {
       mid.push(array[midIndex]);
       mid.push(array[midIndex + 1]);
     } else {
