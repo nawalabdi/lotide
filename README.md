@@ -26,21 +26,17 @@ This project was created and published by me as part of my learnings at Lighthou
 
 The following functions are currently implemented:
 
-The following functions are currently implemented:
-
-assertArraysEqual(actual, expected): this function compares two arrays and logs if they match or not 
-assertEqual(actual, expected): function compares two values and console.logs if they are the same or not
-assertObjectsEqual(actual, expected): takes in two objects and console.logs an appropriate message to the console
-countLetters(string): function counts number of times a letter shows up in a string
-countOnly(allItems, itemsToCount): countOnly will return an object containing counts of everything that the input object listed
-eqArrays(array1, array2): function eqArrays which takes in two arrays and returns true or false, based on a perfect match
-eqObjects(object1, object2): Returns true if both objects have identical keys with identical values. Otherwise returns false.
-findKey(object, callback): function takes in an object and value, it scans the objects and returns the first key which contains the given value. If no key with that given value is found, then it returns undefined.
-findKeyByValue(object, value): function takes in an object and value, it scans the objects and returns the first key which contains the given value. If no key with that given value is found, then it returns undefined.
-head(array): returns first item in an array
-letterPositions(sentence): function will return all the indices in the string where each character is found
-map(array, callback): function takes in an array and a callback function, it applies the callback function to each item in the array and appends it to an array, returning the new array at the end. In this case, the callback function is returning the element found at index of 0 of each element of the array.
-middle(array): takes in an array and returns the middle-most elements of the given array
-tail(array): returns the "tail" of an array, everything except for the first item of the provided array
-takeUntil(array, callback): function will return a slice of the array with elements taken from the beginning until the callback/predicate returns a truthy value.
-without(source, itemsToRemove): function will remove a subset of a given array and remove unwanted elements
+head: accepts an array and returns the first element
+tail: accepts an array and returns the same array, but with the first element removed
+middle: accepts an array and returns the middle element or elements as an array
+countLetters: accepts a string and returns an object with key value pairs to denote each character in the string, and the number of times it occured in the string
+countOnly: accepts an array of strings and return counts for a specific subset of those strings (the subset is identified by an object)
+eqArrays: accepts two arrays and returns true or false based on if they are equal
+eqObjects: accepts two objects and returns true or false based on if they are equal
+findKey: accepts an object and a callback function: scans the object and returns the first key for which the callback function returns a truthy value
+findKeyByValue: accepts an object and a value: scans the object and returns the first key which contains the given value
+flatten: accepts an array where some elements may also be arrays and returns a single array with no inner arrays (a "flattened" version of the input array)
+letterPositions: accepts a string and returns an object with all of the indices in the string where each character was found
+map: accepts an array and a function, and creates a new array with the results of calling the provided function on each element in the input array
+takeUntil: accepts an array and a callback function and runs each array element through the function, returning an array with all the items from the original array until the callback provided returns a truthy value
+without: accepts a source array and an array of items to remove, and returns a subject of the source array, removing any elements that were included in the inputted array of items to remove
